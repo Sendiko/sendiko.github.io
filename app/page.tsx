@@ -3,9 +3,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
-// --- TypeScript Interfaces ---
-// Defining types for our data structures enhances code quality and maintainability.
-
 interface ExperienceItem {
   role: string;
   company: string;
@@ -33,8 +30,6 @@ interface PortfolioData {
   education: EducationItem[];
 }
 
-// --- Data ---
-// The portfolio data is now strongly typed with our PortfolioData interface.
 const portfolioData: PortfolioData = {
   name: "Muhammad Rizky Sendiko",
   title: "Student at Telkom University, Bandung",
@@ -44,10 +39,19 @@ const portfolioData: PortfolioData = {
   about: "A dedicated Android Developer with a strong understanding of Kotlin and an interest to learn about Compose Multiplatform. Looking forward to contributing to more innovative Mobile Development.",
   profilePictureUrl: "https://placehold.co/150x150/E0E7FF/4F46E5?text=MRS",
   experiences: [
+    // {
+    //   role: "FrontEnd Developer",
+    //   company: "Direktorat Pusat Teknologi Informasi, Bandung",
+    //   period: "July 2025 - Now",
+    //   tasks: [
+    //     "Mentoring students at University about Android Development, from basics to expert level, using Kotlin and implementing best practices.",
+    //     "MyCheva, app for Chevalier Laboratory SAS, a platform for study group members to interact with Mentors, and centered communication."
+    //   ]
+    // },
     {
       role: "Mentor Android Developer",
       company: "Chevalier Laboratory, Bandung",
-      period: "Maret 2024 - Now",
+      period: "March 2024 - Now",
       tasks: [
         "Mentoring students at University about Android Development, from basics to expert level, using Kotlin and implementing best practices.",
         "MyCheva, app for Chevalier Laboratory SAS, a platform for study group members to interact with Mentors, and centered communication."
@@ -56,7 +60,7 @@ const portfolioData: PortfolioData = {
     {
       role: "Android Developer",
       company: "Freelance, Bandung",
-      period: "Juli 2023 - Now",
+      period: "July 2023 - Now",
       tasks: [
         "Sistem Hasil Karya, an application for contractor companies that makes it easier to track materials, as well as refueling.",
         "OCR Text Recognition research for Transtrack."
@@ -65,7 +69,7 @@ const portfolioData: PortfolioData = {
     {
       role: "Kotlin Mentor",
       company: "Dilesin Academy, Bandung",
-      period: "Oktober 2024 - November 2024",
+      period: "October 2024 - November 2024",
       tasks: [
         "Mentoring students in Online Private Class about Kotlin and Android Development with Kotlin and Jetpack Compose."
       ]
@@ -86,16 +90,16 @@ const portfolioData: PortfolioData = {
   ],
   education: [
     {
-      degree: "Diploma of Software Engineering Application",
+      degree: "Diploma of Application Software Engineering",
       institution: "Telkom University",
       period: "2023 - 2026",
-      description: "Taking a D3 major in Application Software Engineering with the aim of deepening knowledge about Mobile Development, participating in Study Groups, and also participating in competitions."
+      description: "Taking a Diploma major in Application Software Engineering with the aim of deepening knowledge about Mobile Development, participating in Study Groups, and also participating in competitions."
     },
     {
       degree: "Software Engineering",
       institution: "SMK Telkom Purwokerto",
       period: "2020 - 2023",
-      description: "Learned the basic concepts of programming, HTML, CSS, JS, Kotlin, Object Oriented Programming, Basic Android, and Flutter."
+      description: "Learned the basic concepts of programming, HTML, CSS, JS, Kotlin, Object Oriented Programming, Basic Android with Kotlin, and Flutter."
     }
   ]
 };
